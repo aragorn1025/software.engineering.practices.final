@@ -2,7 +2,6 @@ package aragorn.image.processing;
 
 /**
  * @author Aragorn
- * @version 1.0
  */
 enum Methods {
 	NULL,

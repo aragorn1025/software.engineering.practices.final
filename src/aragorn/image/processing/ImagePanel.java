@@ -15,8 +15,7 @@ import aragorn.gui.ver3_0.GUIPanel;
 /**
  * Create {@code ImagePanel} for the input image or the output image.
  * 
- * @author Tzjie Dai
- * @version 1.0
+ * @author Aragorn
  */
 @SuppressWarnings("serial")
 class ImagePanel extends GUIPanel implements ActionListener {
@@ -116,8 +115,7 @@ class ImagePanel extends GUIPanel implements ActionListener {
 	/**
 	 * The {@code InnerPanel} is the panel that have put image with the same stretch ratio of the width and the height.
 	 * 
-	 * @author Tzjie Dai
-	 * @version 1.0
+	 * @author Aragorn
 	 */
 	private static class InnerPanel extends JPanel {
 

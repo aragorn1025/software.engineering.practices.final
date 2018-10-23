@@ -4,7 +4,6 @@ import java.awt.image.BufferedImage;
 
 /**
  * @author Aragorn
- * @version 1.0
  * @see <a target="_blank" href="http://atlaboratary.blogspot.tw/2013/08/rgb-g-rey-l-gray-r0.html">RGB To Grey</a>
  */
 class MethodArgbToGrey extends Method {

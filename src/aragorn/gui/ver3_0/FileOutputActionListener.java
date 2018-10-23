@@ -11,7 +11,6 @@ import javax.swing.filechooser.FileNameExtensionFilter;
  * The {@code FileIOActionListener} is the action listener that contains the file chooser within the specified parameters for it.
  * 
  * @author Aragorn
- * @since 3.0
  */
 public class FileOutputActionListener extends FileIOActionListener {
 

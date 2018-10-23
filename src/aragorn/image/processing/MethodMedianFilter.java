@@ -5,7 +5,6 @@ import java.util.Arrays;
 
 /**
  * @author Aragorn
- * @version 1.0
  */
 class MethodMedianFilter extends Method {
 

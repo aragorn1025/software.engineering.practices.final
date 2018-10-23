@@ -4,7 +4,6 @@ import java.awt.image.BufferedImage;
 
 /**
  * @author Aragorn
- * @version 1.0
  */
 abstract class MethodExtremaFilter extends Method {
 

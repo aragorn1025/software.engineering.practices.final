@@ -10,7 +10,6 @@ import javax.swing.filechooser.FileFilter;
  * The {@code FileIOActionListener} is the action listener that contains the file chooser within the specified parameters for it.
  * 
  * @author Aragorn
- * @since 3.0
  */
 public abstract class FileIOActionListener implements ActionListener {
 

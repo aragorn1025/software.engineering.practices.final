@@ -2,7 +2,6 @@ package aragorn.image.processing;
 
 /**
  * @author Aragorn
- * @version 1.0
  */
 class Mask implements Cloneable {
 	static final int	M_A_3	= 1;

@@ -12,7 +12,6 @@ import aragorn.gui.ver3_0.GUIPanel;
  * Create {@code MyFrame} for the project of the class Image Processing.
  * 
  * @author Aragorn
- * @version 1.0
  */
 @SuppressWarnings("serial")
 class MyFrame extends GUIFrame {

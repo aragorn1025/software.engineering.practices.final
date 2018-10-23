@@ -13,7 +13,6 @@ import javax.swing.JOptionPane;
  * {@code GUIFrame} is a frame which extends {@code javax.swing.JFrame} and uses {@code GUIPanel} as the content pane.<br>
  * Also, ask before close it.
  * 
- * @since 1.0 @version 1.2
  * @author Aragorn
  */
 @SuppressWarnings("serial")
@@ -22,22 +21,21 @@ public abstract class GUIFrame extends JFrame {
 	/** The default content pane which is {@code GUIPanel} for {@code GUIFrame}. */
 	private GUIPanel contentPane = new GUIPanel();
 
-	/** The {@code java.util.TimerTask} for {@code java.util.Timer}. @since 1.1 */
+	/** The {@code java.util.TimerTask} for {@code java.util.Timer}. */
 	private TimerTask task;
 
-	/** The task state that can be switch from running to pause or from pause to running. @since 1.2 */
+	/** The task state that can be switch from running to pause or from pause to running. */
 	private TaskState taskState = new PauseState();
 
-	/** The {@code java.util.Timer} using in {@code GUIFrame}. @since 1.1 */
+	/** The {@code java.util.Timer} using in {@code GUIFrame}. */
 	private Timer timer = new Timer(true);
 
-	/** The period for {@code java.util.Timer}. @since 1.1 */
+	/** The period for {@code java.util.Timer}. */
 	private int updatingPeriod;
 
 	/**
 	 * Create a {@code GUIFrame} which extends {@code JFrame} with {@code GUIPanel} as the content pane.
 	 * 
-	 * @version 1.2
 	 * @param title
 	 *            the title of the {@code GUIFrame}
 	 * @param dimension
@@ -64,7 +62,6 @@ public abstract class GUIFrame extends JFrame {
 	/**
 	 * Create a {@code GUIFrame} which extends {@code JFrame} with {@code GUIPanel} as the content pane and using {@code java.util.Timer}.
 	 * 
-	 * @since 1.1 @version 1.2
 	 * @param title
 	 *            the title of the {@code GUIFrame}
 	 * @param dimension
@@ -87,7 +84,7 @@ public abstract class GUIFrame extends JFrame {
 		timer.scheduleAtFixedRate(task, 0, this.updatingPeriod);
 	}
 
-	/** Edit timer task action. @since 1.1 */
+	/** Edit timer task action. */
 	protected void addTimerTaskAction() {
 	}
 
@@ -95,8 +92,6 @@ public abstract class GUIFrame extends JFrame {
 	 * Ask before close the {@code GUIFrame}.<br>
 	 * Cancel timer before close frame.<br>
 	 * Additionally, pause timer as the option pane shown and continue the state of the timer if return to the GUIFrame.
-	 * 
-	 * @version 1.7
 	 */
 	public void close() {
 		int state = (taskState.getClass() == RunningState.class) ? 1 : 0;
@@ -153,21 +148,21 @@ public abstract class GUIFrame extends JFrame {
 		JDialog.setDefaultLookAndFeelDecorated(defaultLookAndFeelDecorated);
 	}
 
-	/** Start timer by switching task state from pause to running. @since 1.1 @version 1.2 */
+	/** Start timer by switching task state from pause to running. */
 	public void start() {
 		if (task != null && taskState.getClass().equals(PauseState.class)) {
 			taskState = taskState.switchState();
 		}
 	}
 
-	/** Stop timer by switching task state from running to pause. @since 1.1 @version 1.2 */
+	/** Stop timer by switching task state from running to pause. */
 	public void stop() {
 		if (task != null && taskState.getClass().equals(RunningState.class)) {
 			taskState = taskState.switchState();
 		}
 	}
 
-	/** The task state that do nothing for pausing timer. @since 1.2 */
+	/** The task state that do nothing for pausing timer. */
 	private class PauseState implements TaskState {
 		@Override
 		public void run() {
@@ -179,7 +174,7 @@ public abstract class GUIFrame extends JFrame {
 		}
 	}
 
-	/** The task state for running timer. @since 1.2 */
+	/** The task state for running timer. */
 	private class RunningState implements TaskState {
 		@Override
 		public void run() {

@@ -14,7 +14,6 @@ import javax.swing.filechooser.FileFilter;
  * chooser.
  * 
  * @author Aragorn
- * @since 3.0
  */
 @SuppressWarnings("serial")
 public class GUIFileChooserField extends GUIPanel implements ActionListener {

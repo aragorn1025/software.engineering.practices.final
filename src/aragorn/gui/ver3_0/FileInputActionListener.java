@@ -9,7 +9,6 @@ import javax.swing.JOptionPane;
  * The {@code FileInputActionListener} is the action listener for file input that contains the file chooser within the specified parameters for it.
  * 
  * @author Aragorn
- * @since 3.0
  */
 public class FileInputActionListener extends FileIOActionListener {
 

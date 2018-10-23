@@ -6,7 +6,6 @@ import aragorn.image.processing.Mask.SmoothingMask;
 
 /**
  * @author Aragorn
- * @version 1.0
  */
 abstract class Method {
 	static Method getInstance(Methods methods) {
@@ -58,14 +57,14 @@ abstract class Method {
 		}
 	}
 
-	abstract BufferedImage getOutputImage(BufferedImage image);
+	abstract BufferedImage getOutputImage(BufferedImage image) throws OutOfMemoryError;
 
 	private static class NullMethod extends Method {
 		NullMethod() {
 		}
 
 		@Override
-		BufferedImage getOutputImage(BufferedImage image) {
+		BufferedImage getOutputImage(BufferedImage image) throws OutOfMemoryError {
 			return new BufferedImage(image.getColorModel(), image.copyData(null), image.isAlphaPremultiplied(), null);
 		}
 	}

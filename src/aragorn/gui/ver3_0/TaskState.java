@@ -3,7 +3,6 @@ package aragorn.gui.ver3_0;
 /**
  * {@code TaskState} is an interface for {@code java.util.TimerTask}.
  * 
- * @since 1.2
  * @author Aragorn
  * @see <a target="_blank" href="http://stackoverflow.com/questions/11550561/pause-the-timer-and-then-continue-it">TaskState</a>
  */

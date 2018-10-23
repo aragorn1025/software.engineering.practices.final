@@ -12,7 +12,6 @@ import javax.swing.border.TitledBorder;
 /**
  * {@code GUIPanel} is a panel which extends {@code javax.swing.JPanel} and uses {@code java.awt.GridBagLayout}.
  * 
- * @since 1.0 @version 3.0
  * @author Aragorn
  * @see <a target="_blank" href="https://docs.oracle.com/javase/8/docs/api/java/awt/GridBagConstraints.html">GridBagConstraints</a>
  */
@@ -168,7 +167,6 @@ public class GUIPanel extends JPanel {
 	 *            determines whether and how to resize the component,and its default value is {@code NONE}
 	 * @param insets
 	 *            the custom insets
-	 * @version 3.0
 	 * @see <a target="_blank" href="https://docs.oracle.com/javase/8/docs/api/java/awt/GridBagConstraints.html">GridBagConstraints</a>
 	 */
 	public void addComponent(JComponent component, int gridx, int gridy, int gridwidth, int gridheight, double weightx, double weighty, int anchor,
@@ -207,7 +205,6 @@ public class GUIPanel extends JPanel {
 	 *            determines where, within the display area, to place the component, and its default value is {@code CENTER}
 	 * @param fill
 	 *            determines whether and how to resize the component,and its default value is {@code NONE}
-	 * @version 3.0
 	 * @see #addComponent(JComponent, int, int, int, int, double, double, int, int, Insets)
 	 */
 	public void addComponent(JComponent component, int gridx, int gridy, int gridwidth, int gridheight, double weightx, double weighty, int anchor,
@@ -235,7 +232,6 @@ public class GUIPanel extends JPanel {
 	/**
 	 * Print message on the bottom of the panel.
 	 * 
-	 * @since 1.2 @version 1.4
 	 * @param g
 	 *            the pointer of the parameter {@code Graphics} g
 	 * @param message
@@ -248,7 +244,6 @@ public class GUIPanel extends JPanel {
 	/**
 	 * Print messages on the bottom of the panel line by line.
 	 * 
-	 * @since 1.4
 	 * @param g
 	 *            the pointer of the parameter {@code Graphics} g
 	 * @param messages
@@ -260,7 +255,7 @@ public class GUIPanel extends JPanel {
 		}
 	}
 
-	/** Reset the panel. @since 1.8 */
+	/** Reset the panel. */
 	public void reset() {
 	}
 
