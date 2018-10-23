@@ -1,2 +1,5 @@
+*~
+*.swp
 /bin/
 /data/output/
+/data/test_result/
