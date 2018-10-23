@@ -1,5 +1,4 @@
 *~
 *.swp
-/bin/
-/data/output/
-/data/test_result/
+/bin/*
+/data/output/*
