@@ -1,4 +1,5 @@
 *~
 *.swp
 /bin/*
+!/bin/aragorn_image_processing.jar
 /data/output/*
